@@ -1,0 +1,13 @@
+#page list de produit
+store_backend_product_list:
+    path:     /list # chemin vers l'url
+    defaults: { _controller: storeBackendBundle:Product:list }      #NomduBundle:NomduControlleur:Nomdel'action
+
+#page view de produit
+store_backend_product_view:
+    path:     /view/{id}/{name} # chemin vers l'url
+    defaults: { _controller: storeBackendBundle:Product:view }      #NomduBundle:NomduControlleur:Nomdel'action
+    requirements:
+     id: \d+  #inetrdire les caracteres  ghuihghohoh
+     name: "[a-zA-Z0-9-]{5,30}"
+     _method: GET

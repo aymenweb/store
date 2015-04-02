@@ -11,7 +11,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class MainController extends Controller{
 
     /**
-     * Dashbord on backend
+     * Dashbord on backend nom de dossier: nom dossier view : nom fichier twig
      */
     public function indexAction()
     {

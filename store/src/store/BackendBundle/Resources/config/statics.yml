@@ -1,0 +1,21 @@
+#page static contact
+store_backend_statics_contact:
+    path:     /contact # chemin vers l'url
+    defaults: { _controller: storeBackendBundle:Statics:contact }      #NomduBundle:NomduControlleur:Nomdel'action
+
+#page static about
+store_backend_statics_about:
+    path:     /about # chemin vers l'url
+    defaults: { _controller: storeBackendBundle:Statics:about }      #NomduBundle:NomduControlleur:Nomdel'action
+#page static mention legal
+store_backend_statics_terms:
+    path:     /terms # chemin vers l'url
+    defaults: { _controller: storeBackendBundle:Statics:terms }      #NomduBundle:NomduControlleur:Nomdel'action
+#page static mention legal
+store_backend_statics_concept:
+    path:     /concept # chemin vers l'url
+    defaults: { _controller: storeBackendBundle:Statics:concept }      #NomduBundle:NomduControlleur:Nomdel'action
+# nom de la route
+store_backend_index:
+    path:     /dashboard  #chemin / URI de la route Url afficher
+    defaults: { _controller: storeBackendBundle:Main:index } # le controlleur et l'action Main le nom de fichier controleur

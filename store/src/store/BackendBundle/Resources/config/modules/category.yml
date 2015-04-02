@@ -1,0 +1,13 @@
+#page category
+store_backend_category_list:
+    path:     /list # chemin vers l'url
+    defaults: { _controller: storeBackendBundle:Category:list }      #NomduBundle:NomduControlleur:Nomdel'action
+
+#page category
+store_backend_category_view:
+    path:     /view/{id}/{name} # chemin vers l'url
+    defaults: { _controller: storeBackendBundle:Category:view  }      #NomduBundle:NomduControlleur:Nomdel'action
+    requirements:
+     id: \d+  #inetrdire les caracteres  ghuihghohoh
+     name: "[a-zA-Z0-9-]{5,30}"
+     _method: GET

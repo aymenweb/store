@@ -1,0 +1,13 @@
+#page supplier
+store_backend_supplier_list:
+    path:     /list # chemin vers l'url
+    defaults: { _controller: storeBackendBundle:Supplier:list }      #NomduBundle:NomduControlleur:Nomdel'action
+
+#page category
+store_backend_supplier_view:
+    path:     /view/{id}/{name} # chemin vers l'url
+    defaults: { _controller: storeBackendBundle:Supplier:view  }      #NomduBundle:NomduControlleur:Nomdel'action
+    requirements:
+     id: \d+  #inetrdire les caracteres  ghuihghohoh
+     name: "[a-zA-Z0-9-]{5,30}"
+     _method: GET

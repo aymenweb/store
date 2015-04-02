@@ -1,0 +1,13 @@
+#page cms
+store_backend_cms_list:
+    path:     /list # chemin vers l'url
+    defaults: { _controller: storeBackendBundle:Cms:list }      #NomduBundle:NomduControlleur:Nomdel'action
+
+#page cms
+store_backend_cms_view:
+    path:     /view/{id}/{name} # chemin vers l'url
+    defaults: { _controller: storeBackendBundle:Cms:view  }      #NomduBundle:NomduControlleur:Nomdel'action
+    requirements:
+     id: \d+  #inetrdire les caracteres  ghuihghohoh
+     name: "[a-zA-Z0-9-]{5,30}"
+     _method: GET
