@@ -15,7 +15,8 @@ class CmsController extends Controller{
     /**
      * page category
      */
-    public function listAction(){
+    public function listAction()
+    {
         // je retourne la vue contenue dans le dossier statics de mon bundle StoreBackendBundle
         return $this->render('storeBackendBundle:cms:list.html.twig');
 

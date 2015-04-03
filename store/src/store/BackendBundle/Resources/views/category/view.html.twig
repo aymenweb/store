@@ -1,2 +1,10 @@
-<h2> view cat:  {{ id }}</h2>
-<br><h3> nom de cat: {{ name }} </h3>
+
+{% extends "storeBackendBundle::layout.html.twig" %}
+
+{% block titlepage %}
+    view categorie
+{% endblock %}
+{% block content %}
+    <h2> view cat:  {{ id }}</h2>
+    <br><h3> nom de cat: {{ name }} </h3>
+{% endblock %}
